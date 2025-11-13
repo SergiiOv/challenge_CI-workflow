@@ -37,7 +37,7 @@ jobs:
     - name: Test with pytest
       run: |
     - name: Publish Test Report
-      uses: SergiiOv/action-junit-report@V0
+      uses: SergiiOv/action-junit-report@V3
       if: success() || failure() # always run even if the previous step fails
       with:
         report_paths: '**/junit.xml'
